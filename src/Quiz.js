@@ -18,9 +18,7 @@ class Quiz extends Component {
 
     return (
       <div>
-        <QuizQuestion
-          quizQuestion={quizQuestions[quiz_position - 1].instruction_text}
-        />
+        <QuizQuestion quiz_question={quizQuestions[quiz_position - 1]} />
       </div>
     );
   }

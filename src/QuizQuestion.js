@@ -5,18 +5,17 @@ class QuizQuestion extends Component {
     super(props);
   }
   render() {
-    const { quizQuestion } = this.props;
+    const { quiz_question } = this.props;
 
-    console.log(this.props.quizQuestion);
-
+    console.log(quiz_question);
     return (
       <main>
         <section>
-          <p>// instruction text goes here</p>
+          <p>{quiz_question.instruction_text}</p>
         </section>
         <section className="buttons">
           <ul>
-            <li>{quizQuestion}</li>
+            <li>{quiz_question.answer_options[0]}</li>
           </ul>
         </section>
       </main>
